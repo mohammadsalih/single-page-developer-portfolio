@@ -1,0 +1,144 @@
+/* ********************************************/
+/* below 1068px : for  tablets*/
+/* ********************************************/
+@media screen and (max-width: 66.75em) {
+  /* grid container */
+  .grid--three-cel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* typography */
+  h1 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+  }
+
+  /* hero */
+  .hero {
+    padding: 7.5rem 0;
+  }
+
+  .hero::after {
+    bottom: -8px;
+    right: 0;
+
+    transform: translateX(50%);
+  }
+
+  /* hero content  */
+  .hero-paragraph {
+    width: 50%;
+  }
+
+  /* section projects projects card */
+  .project-img-container:hover .project-img-hover,
+  .project-img-container:focus .project-img-hover {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* project cta container */
+  .project-cta-container {
+    display: flex;
+  }
+
+  /* footer */
+  /* contact  */
+  .contact {
+    grid-template-columns: 1fr;
+
+    max-width: 50rem;
+  }
+  .contact-details {
+    text-align: center;
+  }
+  .contact::after {
+    transform: translate(-100%, 50%);
+  }
+}
+/* ********************************************/
+/* below 768px : for mobile*/
+/* ********************************************/
+@media screen and (max-width: 51.25em) {
+  /* typography */
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  /* styling the page components*/
+  /* grid container */
+  .grid--two-cel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid--three-cel {
+    grid-template-columns: repeat(1, 1fr);
+
+    justify-items: center;
+
+    text-align: center;
+  }
+  /* under line text */
+  .underline-text::after {
+    bottom: 0;
+  }
+
+  /* header */
+  .header {
+    padding: 2rem 0;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  /* hero  */
+  .hero {
+    margin-top: -25rem;
+    padding-top: 0rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4.4rem;
+    justify-items: center;
+
+    /* transform: translateY(-25rem); */
+
+    text-align: center;
+  }
+  .hero::before {
+    top: 25%;
+
+    z-index: -12;
+  }
+  .hero::after {
+    top: 45%;
+    bottom: auto;
+
+    transform: translateX(50%);
+  }
+
+  /* hero content container */
+  .hero-title {
+    margin-bottom: 2.8rem;
+
+    width: 100%;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 3.2rem;
+
+    width: 100%;
+    max-width: 50rem;
+  }
+
+  /* hero image */
+  .hero-img {
+    position: relative;
+
+    grid-row-start: 1;
+  }
+}
